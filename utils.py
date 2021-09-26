@@ -60,7 +60,7 @@ def get_category_by_name(guild, category_name):
 
 
 def perm_checker(ctx):
-    if ctx.author.id == 168526449832099841:
+    if ctx.author.id == 168526449832099841 or ctx.author.id == BOT_OWNER_ID:
         return True
     for role in ctx.author.roles:
         role = role.name
@@ -77,7 +77,7 @@ def mods_or_admin():
 
 def bot_maker():
     async def predicate(ctx):
-        if ctx.author.id == BOT_OWNER_ID:
+        if ctx.author.id == 168526449832099841 or ctx.author.id == BOT_OWNER_ID:
             return True
 
     return commands.check(predicate)
