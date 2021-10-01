@@ -4,13 +4,10 @@ DEBUG = True
 if DEBUG:
     print("We are in debug")
     from pathlib import Path
-    # from dotenv import load_dotenv
-    # from dotenv import dotenv_values
+    from dotenv import load_dotenv
 
-    # env_path = Path(".") / ".env.debug"
-    # load_dotenv(dotenv_path=env_path)
-    env_dict = dotenv_values()
-    print(env_dict)
+    env_path = Path(".") / ".env.debug"
+    load_dotenv(dotenv_path=env_path)
     from settings_files._global import *
 else:
     print("We are in production")

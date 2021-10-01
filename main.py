@@ -3,8 +3,6 @@ from discord.ext import commands
 import discord
 from settings import *
 
-DISCORD_BOT_TOKEN = env_dict['DISCORD_BOT_TOKEN']
-
 bot_id = DISCORD_BOT_TOKEN
 
 activity = discord.Streaming(
