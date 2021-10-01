@@ -7,9 +7,10 @@ if DEBUG:
     # from dotenv import load_dotenv
     # from dotenv import dotenv_values
 
-    env_path = Path(".") / ".env.debug"
+    # env_path = Path(".") / ".env.debug"
     # load_dotenv(dotenv_path=env_path)
-    env_dict = dotenv_values(dotenv_path=env_path)
+    env_dict = dotenv_values()
+    print(env_dict)
     from settings_files._global import *
 else:
     print("We are in production")
