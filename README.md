@@ -1,4 +1,4 @@
-# Howest-Discord-Bot
+# Discord-Bot
 
 ## How to install:
 Have python 3.9 installed
